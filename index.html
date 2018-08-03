@@ -159,6 +159,115 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sanjicaidan" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/03/sanjicaidan/">三级菜单</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/03/sanjicaidan/" class="archive-article-date">
+  	<time datetime="2018-08-03T13:06:21.042Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code class="bash">map={<span class="string">'河南'</span>:{<span class="string">'郑州'</span>:{<span class="string">'金水区'</span>:{},<span class="string">'二七区'</span>:{},<span class="string">'中原区'</span>:{}},<span class="string">'洛阳'</span>:{<span class="string">'西工区'</span>:{},<span class="string">'涧西区'</span>:{},<span class="string">'宜阳县'</span>:{}},<span class="string">'开封'</span>:{<span class="string">'龙亭区'</span>:{},<span class="string">'鼓楼区'</span>:{},<span class="string">'禹王台'</span>:{}}},<span class="string">'河北'</span>:{<span class="string">'张家口'</span>:{<span class="string">'延庆区'</span>:{},<span class="string">'宣化区'</span>:{},<span class="string">'昌平'</span>:{}},<span class="string">'石家庄'</span>:{<span class="string">'桥西区'</span>:{},<span class="string">'鹿泉区'</span>:{},<span class="string">'正定县'</span>:{}},<span class="string">'唐山'</span>:{<span class="string">'开平区'</span>:{},<span class="string">'丰南区'</span>:{},<span class="string">'古治区'</span>:{}},<span class="string">'衡水'</span>:{<span class="string">'武邑县'</span>:{},<span class="string">'武城县'</span>:{},<span class="string">'武强县'</span>:{}}},<span class="string">'广东'</span>:{<span class="string">'广州'</span>:{<span class="string">'白云区'</span>:{},<span class="string">'海珠区'</span>:{},<span class="string">'天河区'</span>:{}},<span class="string">'惠州'</span>:{<span class="string">'惠城区'</span>:{},<span class="string">'汝湖镇'</span>:{},<span class="string">'博罗县'</span>:{}},<span class="string">'江门'</span>:{<span class="string">'蓬江区'</span>:{},<span class="string">'江海区'</span>:{},<span class="string">'三江镇'</span>:{}},<span class="string">'深圳'</span>:{<span class="string">'福田区'</span>:{},<span class="string">'南山区'</span>:{},<span class="string">'罗湖区'</span>:{}}}}
+map_menu=list(map.keys())
+flag=True
+<span class="keyword">while</span> flag:
+    <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(map_menu,1):
+        <span class="built_in">print</span>(i,j)
+    number=input(<span class="string">'请输入你省的编号退出(Q/q):'</span>)
+    <span class="keyword">if</span> number.isdigit():
+        number=int(number)
+        <span class="keyword">if</span> number&lt;=len(map_menu):
+            <span class="keyword">while</span> flag:
+                sheng=map_menu[number-1]
+                shi=list(map[sheng].keys())
+                <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(shi,1):
+                    <span class="built_in">print</span>(i,j)
+                number1=input(<span class="string">'请输入你要选择的市,返回上一级请按e/E,退出(q/Q):'</span>)
+                <span class="keyword">if</span> number1.isdigit():
+                    number1=int(number1)
+                    <span class="keyword">if</span> number1&lt;=len(shi):
+                        <span class="keyword">while</span> flag:
+                            shi1=shi[number1-1]
+                            shi2=list(map[sheng][shi1])
+                            <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(shi2,1):
+                                <span class="built_in">print</span>(i,j)
+                            number2=input(<span class="string">'返回上一层(e/E),退出(q/Q):'</span>)
+                            <span class="keyword">if</span> number2.upper()==<span class="string">'E'</span>:
+                                <span class="built_in">break</span>
+                            <span class="keyword">elif</span> number2.upper()==<span class="string">'Q'</span>:
+                                flag=False 
+                            <span class="keyword">else</span>:
+                                <span class="built_in">print</span>(<span class="string">'输入的不合法'</span>)
+                    <span class="keyword">else</span>:
+                        <span class="built_in">print</span>(<span class="string">'你的输入超出了范围：'</span>)
+                <span class="keyword">elif</span> number1.upper()==<span class="string">'E'</span>:
+                    <span class="built_in">break</span>
+                <span class="keyword">elif</span> number1.upper()==<span class="string">'Q'</span>:
+                    flag=False
+                <span class="keyword">else</span>:
+                    <span class="built_in">print</span>(<span class="string">'输入有误，请重新输入'</span>)
+        <span class="keyword">else</span>:
+            <span class="built_in">print</span>(<span class="string">'你的输入超出了范围'</span>)
+    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:
+        flag=False
+    <span class="keyword">else</span>:
+        <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入'</span>)
+<span class="built_in">print</span>(<span class="string">'退出'</span>)
+</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/03/sanjicaidan/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Untitled-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
