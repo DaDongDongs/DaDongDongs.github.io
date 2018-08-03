@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>小小购物车 | Python-Python程序设计/软件开发</title>
+  <title>欢迎来到我的世界,带你零基础学习Python | Python-Python程序设计/软件开发</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="def z_money():     money=input(&apos;请输入你的资产:&apos;)     if money.isdigit():         money=int(money)         return money     elif money.upper()==&apos;Q&apos;:         flag=False     else:         print(&apos;输入错误请重新输入&apos;)  #">
+  <meta name="description" content="` bash$ hexo newPython的数据类型1.变量:变量的赋值：一个值赋值多变量，变量的值和id一样            多个值赋值一个变量，变量值和最后一个值相等变量名的命名规则：不能以数字开头，                  小写字母，后面可以跟数字单词和单词之间用隔开（模块名，包名）单词首字母大写（类名）以开头，其他和普通变量一样标识符和关键词不能作为变量名使2.标识符：不">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小小购物车">
+<meta property="og:title" content="欢迎来到我的世界,带你零基础学习Python">
 <meta property="og:url" content="http://yoursite.com/2018/07/16/hello-world/index.html">
 <meta property="og:site_name" content="Python-Python程序设计&#x2F;软件开发">
-<meta property="og:description" content="def z_money():     money=input(&apos;请输入你的资产:&apos;)     if money.isdigit():         money=int(money)         return money     elif money.upper()==&apos;Q&apos;:         flag=False     else:         print(&apos;输入错误请重新输入&apos;)  #">
+<meta property="og:description" content="` bash$ hexo newPython的数据类型1.变量:变量的赋值：一个值赋值多变量，变量的值和id一样            多个值赋值一个变量，变量值和最后一个值相等变量名的命名规则：不能以数字开头，                  小写字母，后面可以跟数字单词和单词之间用隔开（模块名，包名）单词首字母大写（类名）以开头，其他和普通变量一样标识符和关键词不能作为变量名使2.标识符：不">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-03T12:58:41.113Z">
+<meta property="og:updated_time" content="2018-08-03T13:34:13.299Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小小购物车">
-<meta name="twitter:description" content="def z_money():     money=input(&apos;请输入你的资产:&apos;)     if money.isdigit():         money=int(money)         return money     elif money.upper()==&apos;Q&apos;:         flag=False     else:         print(&apos;输入错误请重新输入&apos;)  #">
+<meta name="twitter:title" content="欢迎来到我的世界,带你零基础学习Python">
+<meta name="twitter:description" content="` bash$ hexo newPython的数据类型1.变量:变量的赋值：一个值赋值多变量，变量的值和id一样            多个值赋值一个变量，变量值和最后一个值相等变量名的命名规则：不能以数字开头，                  小写字母，后面可以跟数字单词和单词之间用隔开（模块名，包名）单词首字母大写（类名）以开头，其他和普通变量一样标识符和关键词不能作为变量名使2.标识符：不">
   
     <link rel="alternative" href="/atom.xml" title="Python-Python程序设计/软件开发" type="application/atom+xml">
   
@@ -165,7 +165,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      小小购物车
+      欢迎来到我的世界,带你零基础学习Python
     </h1>
   
 
@@ -178,147 +178,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code class="bash">def z_money():
-    money=input(<span class="string">'请输入你的资产:'</span>)
-    <span class="keyword">if</span> money.isdigit():
-        money=int(money)
-        <span class="built_in">return</span> money
-    <span class="keyword">elif</span> money.upper()==<span class="string">'Q'</span>:
-        flag=False
-    <span class="keyword">else</span>:
-        <span class="built_in">print</span>(<span class="string">'输入错误请重新输入'</span>)
-
-<span class="comment">#获取商品信息</span>
-def get_shangpin():
-    <span class="built_in">print</span>(<span class="string">'请选择对应的商品编号'</span>.center(30,<span class="string">'*'</span>))
-    <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(goods,1): 
-        <span class="built_in">print</span>(<span class="string">'编号：{}\t商品名称：{}\t商品价格：{}'</span>.format(i,j[<span class="string">'name'</span>],j[<span class="string">'price'</span>]))
-    <span class="built_in">print</span>(<span class="string">'*'</span>*50)
-<span class="comment">#添加商品</span>
-def add_goods():
-    name=input(<span class="string">'请你输入你修改商品的名称:'</span>)
-    prince=input(<span class="string">'请你输入你修改商品的价格:'</span>)
-    goods.append({})
-    goods[-1][<span class="string">'name'</span>]=name
-    goods[-1][<span class="string">'price'</span>]=price
-<span class="comment">#查询指定商品</span>
-def cha_goods():
-    number=input(<span class="string">'请你输入查询的商品编号或退出(Q/q):'</span>)
-    <span class="keyword">if</span> number.isdigit():
-        number=int(number)
-        <span class="keyword">if</span> number&lt;=len(goods):
-            <span class="built_in">print</span>(goods[number-1])     
-    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:
-        flag=False
-        <span class="built_in">return</span> flag
-    <span class="keyword">else</span>:
-        <span class="built_in">print</span>(<span class="string">'你输入有误,请重新输入'</span>)
-<span class="comment">#修改商品</span>
-def gai_goods():
-    number=input(<span class="string">'请你输入修改的商品编号或退出(Q/q):'</span>)
-    <span class="keyword">if</span> number.isdigit():
-        number=int(number)
-        <span class="keyword">if</span> number&lt;=len(goods):
-            name=input(<span class="string">'输入修改的商品名字或退出(Q/q):'</span>).strip()
-            <span class="keyword">if</span> name.upper()==<span class="string">'Q'</span>:
-                flag=False
-            <span class="keyword">else</span>:
-                price=input(<span class="string">'输入修改的价格或退出(Q/q):'</span>).strip()
-                <span class="keyword">if</span> name.upper()==<span class="string">'Q'</span>:
-                    flag=False
-                <span class="keyword">else</span>:
-                    goods[number-1][<span class="string">'name'</span>]=name
-                    goods[number-1][<span class="string">'price'</span>]=price
-        <span class="keyword">else</span>:
-            <span class="built_in">print</span>(<span class="string">'你输入编号超过范围'</span>)    
-    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:
-        flag=False
-        <span class="built_in">return</span> flag
-    <span class="keyword">else</span>:
-        <span class="built_in">print</span>(<span class="string">'你输入有误,请重新输入'</span>)
-<span class="comment">#删除商品</span>
-def shan_goods():
-    number=input(<span class="string">'请你输入删除的商品编号或退出(Q/q):'</span>)
-    <span class="keyword">if</span> number.isdigit():
-        number=int(number)
-        <span class="keyword">if</span> number&lt;=len(goods):
-            del buy[number-1]
-        <span class="keyword">else</span>:
-            <span class="built_in">print</span>(<span class="string">'你输入标号超出范围'</span>)
-    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:
-        flag=False
-        <span class="built_in">return</span> flag
-    <span class="keyword">else</span>:
-        <span class="built_in">print</span>(<span class="string">'你输入有误,请重新输入'</span>)
-<span class="comment">#充值</span>
-def chong_money(money):
-    cmoney=input(<span class="string">'请你输入充值金额退出(q/Q):'</span>)
-    <span class="keyword">if</span> cmoney.isdigit():
-        money+=int(cmoney)
-        <span class="built_in">print</span>(<span class="string">'充值完成，总金额为%d'</span>%money)
-    <span class="keyword">elif</span> cmoney.upper()==<span class="string">'Q'</span>:
-        flag=False
-        <span class="built_in">return</span> flag
-    <span class="built_in">return</span> money
-<span class="comment">#购买商品</span>
-def buy_goods(money):
-    number=input(<span class="string">'请你输入购买的商品编号或退出(Q/q):'</span>)
-    <span class="keyword">if</span> number.isdigit():
-        number=int(number)
-        <span class="keyword">if</span> number&lt;=len(goods):
-            <span class="keyword">if</span> goods[number-1][<span class="string">'price'</span>]&lt;=money:
-                buy.append(goods[number-1][<span class="string">'name'</span>])
-                buy.append(goods[number-1][<span class="string">'price'</span>])
-                money-=goods[number-1][<span class="string">'price'</span>]
-                <span class="built_in">print</span>(<span class="string">'已经购买成功%s，剩余资产%d'</span>%(goods[number-1][<span class="string">'name'</span>],money))
-            <span class="keyword">else</span>:
-                <span class="built_in">print</span>(<span class="string">'余额不足请充值'</span>)
-        <span class="keyword">else</span>:
-            <span class="built_in">print</span>(<span class="string">'没有当前商品'</span>)
-    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:
-        flag=False
-        <span class="built_in">return</span> flag
-    <span class="keyword">else</span>:
-        <span class="built_in">print</span>(<span class="string">'输入错误'</span>)
-goods = [{<span class="string">"name"</span>: <span class="string">"电脑"</span>, <span class="string">"price"</span>: 2999},
-{<span class="string">"name"</span>: <span class="string">"鼠标"</span>, <span class="string">"price"</span>: 1000},
-{<span class="string">"name"</span>: <span class="string">"游艇"</span>, <span class="string">"price"</span>: 2000},
-{<span class="string">"name"</span>: <span class="string">"美女"</span>, <span class="string">"price"</span>: 9998}]
-buy=[]
-money=z_money()
-<span class="built_in">print</span>(<span class="string">'本店功能列表'</span>.center(50,<span class="string">'*'</span>))
-def get_gongneng():
-    z_list=[<span class="string">'获取所有商品并购买商品'</span>,<span class="string">'添加商品'</span>,<span class="string">'查询指定商品'</span>,<span class="string">'修改商品'</span>,<span class="string">'删除商品'</span>,<span class="string">'充值'</span>]
-    <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(z_list,1):
-        <span class="built_in">print</span>(i,j)
-
-flag=True
-<span class="keyword">while</span> flag:
-    get_gongneng()
-    number=input(<span class="string">'请你输入你需要选择的功能退出(Q/q):'</span>)
-    <span class="keyword">if</span> number.isdigit():
-        number=int(number)
-        <span class="keyword">if</span> number==1:
-            get_shangpin()
-            buy_goods(money)
-        <span class="keyword">elif</span> number==2:
-            add_goods()
-        <span class="keyword">elif</span> number==3:
-            get_shangpin()
-            cha_goods()
-        <span class="keyword">elif</span> number==4:
-            get_shangpin()
-            gai_goods()
-        <span class="keyword">elif</span> number==5:
-            shan_goods()
-        <span class="keyword">elif</span> number==6:
-            money=chong_money(money)
-    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:
-        flag=False
-    <span class="keyword">else</span>:
-        <span class="built_in">print</span>(<span class="string">'你输入有误,请重新输入'</span>)
-<span class="built_in">print</span>(buy)
-</code></pre>
+        <p><code>`</code> bash<br>$ hexo new<br>Python的数据类型<br>1.变量:<br>变量的赋值：一个值赋值多变量，变量的值和id一样<br>            多个值赋值一个变量，变量值和最后一个值相等<br>变量名的命名规则：不能以数字开头，<br>                  小写字母，后面可以跟数字<br>单词和单词之间用<em>隔开（模块名，包名）<br>单词首字母大写（类名）<br>以</em>开头，其他和普通变量一样<br>标识符和关键词不能作为变量名使<br>2.标识符：不要使用Python预定义的标识符名对自定义的标识符进行命名。应该避免名称开头和结尾都使用下划线（_）。命名规则和变量一样<br>3.关键值：逐个记忆特别注意True，None，Flase开头大写<br>4.注释：单行注释，多行注释。<br>5.python的六种数据类型（Number，String，List，Tuple，Ditc，Set） 前两个为不可变数据类型，后四个为可变数据类型<br>不可变数据类型<br>Number数值：类型整数类型，浮点数类型 。<br>     整数类型：二进制，八进制，十进制，十六进制。<br>     浮点数类型：小数和科学计数法<br>String类型：单引号，双引号，三引号。‘\’转义字符，在行末尾使用反斜杠表续航，例：“hello word hello word\<br>                                     hello word hello word”<br>              ‘\t’制表符’，\r’回车，’n’换行、<br>可变数据类型<br>1.有序的：列表，元组。<br>       列表：list1=[‘marry’,2.2,10,[5,10]]<br>             list是一种最具灵活性的有序集合对象类型，可以随时添加  删除其中的元素。<br>              使用‘+’ &gt;&gt;&gt; list=[1]</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>list=list+[‘a’, ‘b’]<br>list<br>[1, ‘a’, ‘b’]<br>                       []*5:将列表复制多个<br>              切片： A=[m:n]表示切片取出列表中位置m→n-1的值。[m:]表示取m后的所有值[:n]同理</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>元组：tuple1=（1,2,3,4）
+        tuple2=’a’,’b’,’c’
+       不能进行二次赋值，相当于只读列表
+</code></pre><p>2.无序的：字典，集合<br>         字典：除列表以外python之中最灵活的内置数据结构类型。列表是有序的对象集合，字典是无序的对象集合。<br>            键值对：字典由索引(key)和它对应的值(value)组成<br>格式：变量={‘键1’:’值1’,’键2’:’值2’,’键3’:’值3’….}<br>dict={‘name’:’张三’,’age’:’18’,’class’:’python’}<br>                  dict = {}<br>dict[‘one’] = “This is one”<br>dict[2] = “This is two”<br>集合：是一个无序不重复元素的序列，可以使用{}也可以使用set<br>格式：变量={值，值，值…..}<br>   setType={‘苹果’,’oppo’,’华为’,’小米’}<br>重要的作用去重复</p>
 
       
 
@@ -416,7 +287,7 @@ flag=True
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          欢迎来到我的世界,带你零基础学习Python
+          小小购物车
         
       </div>
     </a>
