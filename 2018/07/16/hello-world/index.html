@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>欢迎来到我的世界 | Python-Python程序设计/软件开发</title>
+  <title>小小购物车 | Python-Python程序设计/软件开发</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="def z_money():    money=input(‘请输入你的资产:’)    if money.isdigit():        money=int(money)        return money    elif money.upper()==’Q’:        flag=False    else:        print(‘输入错误请重新输入’) #获取商品信息def">
 <meta property="og:type" content="article">
-<meta property="og:title" content="欢迎来到我的世界">
+<meta property="og:title" content="小小购物车">
 <meta property="og:url" content="http://yoursite.com/2018/07/16/hello-world/index.html">
 <meta property="og:site_name" content="Python-Python程序设计&#x2F;软件开发">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="def z_money():    money=input(‘请输入你的资产:’)    if money.isdigit():        money=int(money)        return money    elif money.upper()==’Q’:        flag=False    else:        print(‘输入错误请重新输入’) #获取商品信息def">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-17T07:46:04.064Z">
+<meta property="og:updated_time" content="2018-08-03T12:48:20.825Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="欢迎来到我的世界">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="小小购物车">
+<meta name="twitter:description" content="def z_money():    money=input(‘请输入你的资产:’)    if money.isdigit():        money=int(money)        return money    elif money.upper()==’Q’:        flag=False    else:        print(‘输入错误请重新输入’) #获取商品信息def">
   
     <link rel="alternative" href="/atom.xml" title="Python-Python程序设计/软件开发" type="application/atom+xml">
   
@@ -165,7 +165,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      欢迎来到我的世界
+      小小购物车
     </h1>
   
 
@@ -178,15 +178,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>def z_money():<br>    money=input(‘请输入你的资产:’)<br>    if money.isdigit():<br>        money=int(money)<br>        return money<br>    elif money.upper()==’Q’:<br>        flag=False<br>    else:<br>        print(‘输入错误请重新输入’)</p>
+<p>#获取商品信息<br>def get_shangpin():<br>    print(‘请选择对应的商品编号’.center(30,’<em>‘))<br>    for i,j in enumerate(goods,1):<br>        print(‘编号：{}\t商品名称：{}\t商品价格：{}’.format(i,j[‘name’],j[‘price’]))<br>    print(‘</em>‘*50)</p>
+<p>#添加商品<br>def add_goods():<br>    name=input(‘请你输入你修改商品的名称:’)<br>    prince=input(‘请你输入你修改商品的价格:’)<br>    goods.append({})<br>    goods[-1][‘name’]=name<br>    goods[-1][‘price’]=price</p>
+<p>#查询指定商品<br>def cha_goods():<br>    number=input(‘请你输入查询的商品编号或退出(Q/q):’)<br>    if number.isdigit():<br>        number=int(number)<br>        if number&lt;=len(goods):<br>            print(goods[number-1])<br>    elif number.upper()==’Q’:<br>        flag=False<br>        return flag<br>    else:<br>        print(‘你输入有误,请重新输入’)</p>
+<p>#修改商品<br>def gai_goods():<br>    number=input(‘请你输入修改的商品编号或退出(Q/q):’)<br>    if number.isdigit():<br>        number=int(number)<br>        if number&lt;=len(goods):<br>            name=input(‘输入修改的商品名字或退出(Q/q):’).strip()<br>            if name.upper()==’Q’:<br>                flag=False<br>            else:<br>                price=input(‘输入修改的价格或退出(Q/q):’).strip()<br>                if name.upper()==’Q’:<br>                    flag=False<br>                else:<br>                    goods[number-1][‘name’]=name<br>                    goods[number-1][‘price’]=price<br>        else:<br>            print(‘你输入编号超过范围’)<br>    elif number.upper()==’Q’:<br>        flag=False<br>        return flag<br>    else:<br>        print(‘你输入有误,请重新输入’)</p>
+<p>#删除商品<br>def shan_goods():<br>    number=input(‘请你输入删除的商品编号或退出(Q/q):’)<br>    if number.isdigit():<br>        number=int(number)<br>        if number&lt;=len(goods):<br>            del buy[number-1]<br>        else:<br>            print(‘你输入标号超出范围’)<br>    elif number.upper()==’Q’:<br>        flag=False<br>        return flag<br>    else:<br>        print(‘你输入有误,请重新输入’)</p>
+<p>#充值<br>def chong_money(money):<br>    cmoney=input(‘请你输入充值金额退出(q/Q):’)<br>    if cmoney.isdigit():<br>        money+=int(cmoney)<br>        print(‘充值完成，总金额为%d’%money)<br>    elif cmoney.upper()==’Q’:<br>        flag=False<br>        return flag<br>    return money</p>
+<p>#购买商品<br>def buy_goods(money):<br>    number=input(‘请你输入购买的商品编号或退出(Q/q):’)<br>    if number.isdigit():<br>        number=int(number)<br>        if number&lt;=len(goods):<br>            if goods[number-1][‘price’]&lt;=money:<br>                buy.append(goods[number-1][‘name’])<br>                buy.append(goods[number-1][‘price’])<br>                money-=goods[number-1][‘price’]<br>                print(‘已经购买成功%s，剩余资产%d’%(goods[number-1][‘name’],money))<br>            else:<br>                print(‘余额不足请充值’)<br>        else:<br>            print(‘没有当前商品’)<br>    elif number.upper()==’Q’:<br>        flag=False<br>        return flag<br>    else:<br>        print(‘输入错误’)<br>goods = [{“name”: “电脑”, “price”: 2999},<br>{“name”: “鼠标”, “price”: 1000},<br>{“name”: “游艇”, “price”: 2000},<br>{“name”: “美女”, “price”: 9998}]<br>buy=[]<br>money=z_money()<br>print(‘本店功能列表’.center(50,’*’))<br>def get_gongneng():<br>    z_list=[‘获取所有商品并购买商品’,’添加商品’,’查询指定商品’,’修改商品’,’删除商品’,’充值’]<br>    for i,j in enumerate(z_list,1):<br>        print(i,j)</p>
+<p>flag=True<br>while flag:<br>    get_gongneng()<br>    number=input(‘请你输入你需要选择的功能退出(Q/q):’)<br>    if number.isdigit():<br>        number=int(number)<br>        if number==1:<br>            get_shangpin()<br>            buy_goods(money)<br>        elif number==2:<br>            add_goods()<br>        elif number==3:<br>            get_shangpin()<br>            cha_goods()<br>        elif number==4:<br>            get_shangpin()<br>            gai_goods()<br>        elif number==5:<br>            shan_goods()<br>        elif number==6:<br>            money=chong_money(money)<br>    elif number.upper()==’Q’:<br>        flag=False<br>    else:<br>        print(‘你输入有误,请重新输入’)<br>print(buy)      </p>
 
       
 
